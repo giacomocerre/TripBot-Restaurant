@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>The Tripbot Restaurant</title>
+		<link rel="icon" href="img/favicon.ico"/>
+		<!--JS -->
+		<script src="js/libraries-js/jquery-3.3.1.min.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/grafico.js"></script>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/grafici.css">
+		<!-- WOW CSS -->
+		<link rel="stylesheet" href="js/libraries-js/wow/css/animate.css">
+		<script src="js/libraries-js/wow/js/wow.min.js"></script>
+			<!-- CAROUSEL CSS -->
+		<link rel="stylesheet" href="js/libraries-js/owl-carousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="js/libraries-js/owl-carousel/owl.theme.default.min.css">
+		<script src="js/libraries-js/owl-carousel/owl.carousel.min.js"></script>
+		<!-- FONT -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400,500,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,400i" rel="stylesheet">
+	</head>
+	
+	<body>
+	
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="#prezzo">
+						<div class="object move-left obj1">
+							<label>Prezzo</label>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#qualita">
+						<div class="object move-left obj2">
+							<label>Qualità</label>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#migliori">
+						<div class="object move-left obj3">
+							<label>Classifica</label>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#categorie">
+						<div class="object move-left obj4"><label>Categorie</label>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="about.html">
+						<div class="object move-left obj5">
+							<label>About</label>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<header id="head_background">
+			<div id="info_head">
+				<img id="siteName" class ="wow fadeIn" src="img/title.png" alt="the tripbot restaurant">
+			</div>
+			<div id="down">
+				<a href="#prezzo">
+					<img id="downarrow" src="img/closehand.png" onmouseover="this.src='img/openhand.png';" onmouseout="this.src='img/closehand.png';"/>
+				</a>
+			</div>
+		</header>
+		<section class="statistiche color1" id="prezzo">
+			<article class="owl-carousel">
+				<div class="esterno">
+					<div class="sezione sez1">
+						<img class="artwork wow fadeInLeftBig" src="img/salmone.png">
+					</div>
+					<div class="sezione wow fadeInRightBig sez2">
+						<h2>DOVE SI TROVANO I RISTORANTI PIÙ ECONOMICI IN ITALIA?</h2>
+						<p>
+						Su TripAdvisor gli utenti hanno valutato la spesa nei locali che hanno frequentato, associando 3 fasce di prezzo: BASSA, MEDIA, o ALTA. <br/> Visualizzando su un grafico i 3 range si nota come la maggior parte dei ristoranti si collochino nella fascia media, vale a dire che generalmente in Italia gli utenti ritengono di aver speso una cifra adeguata. <br/>
+						Una percentuale significativa di utenti ritiene di spendere una cifra piuttosto bassa rispetto a quanto consumato. Nello specifico la regione pi&#249; economica &#232; la SICILIA (con una percentuale di ristoranti economici pari al 32%). <br/>
+						La fascia meno significativa &#232; quella relativa ai ristoranti pi&#249; costosi. La regione che ha la maggior percentuale di locali in questa fascia di prezzo &#232; la LOMBARDIA con oltre il 6% di presenze. </br>
+						<a class="fonte" href="https://www.ebnt.it/documenti/pubblicazioni/2010-10-01_La_ristorazione_di_qualita.pdf">Studi confermano</a> infatti come in Italia circa la met&#224; dei ristoranti si collochino nella fascia 25-40&#8364; a pasto mentre solo una minima percentuale tocca la fascia 75-100&#8364; a persona. </br>
+						</p>
+					</div>
+					<div id="graficoPrezzoIT" class="graficoPrezzo"></div>
+				</div>
+				<div class="esterno">
+					<div class="sezione sez1">
+						<img class="artwork wow fadeInLeftBig" src="img/gamberi.png">
+					</div>
+					<div class="sezione wow fadeInRightBig sez2">
+						<h2>DOVE SI TROVANO I RISTORANTI PIÙ ECONOMICI IN EUROPA?</h2>
+						<p>
+						A livello europeo si notano maggiori dislivelli. La maggior parte dei ristoranti si colloca sempre in una fascia di prezzo media anche se si osservano importanti picchi sia nella fascia alta che in quella bassa. </br>
+						Gli utenti TripAdvisor ritengono che il PRINCIPATO DI MONACO sia lo stato pi&#249; caro a livello della ristorazione (il 22% dei suoi ristoranti rientrano nella fascia di prezzo alta), mentre in generale gli altri stati  presentano una piccola percentuale di locali collocabili in questa fascia. </br>
+						Anche a livello europeo una percentuale significativa di utenti ritiene di spendere una cifra piuttosto bassa rispetto a quanto consumato. Nello specifico lo stato pi&#249; economico &#232; la POLONIA (con una percentuale di ristoranti economici pari a circa il 31%). <a class="fonte" href="http://www.sostravel.it/blog/2010/08/prezzi-in-polonia/">Fonti attestano</a> infatti come in Polonia si possa mangiare in un buon ristorante spendendo meno di 10&#8364; a persona e difficilmente una cena costa pi&#249; di 25&#8364;.<br/>
+						</p>
+					</div>
+					<div id="graficoPrezzoUE" class="graficoPrezzo"></div>
+				</div>
+			</article>
+		</section>
+		
+		<section class="statistiche color2" id="qualita">
+			<article class="owl-carousel">
+				<div class="esterno">
+					<div class="sezione wow fadeInDownBig sez2">
+						<h2>PREZZO ALTO &#200; DAVVERO SINONIMO DI ALTA QUALIT&#192;?</h2>
+						<p>
+						Gli utenti di TripAdvisor hanno espresso la loro opinione riguardo al rapporto qualit&#224;-prezzo dei locali.</br>
+						Rapporto qualit&#224;-prezzo ECCELLENTE: la regione peggiore &#232; il FRIULI-VENEZIA GIULIA, con la percentuale minore di ristoranti in questa fascia, seguita da Lombardia e la Valle d&#180;Aosta. Le regioni migliori per rapporto qualit&#224;-prezzo sono MOLISE e CALABRIA. </br>
+						Rapporto qualit&#224;-prezzo PESSIMO: il Molise e la Valle d&#180;Aosta sono le uniche regioni a non avere alcun ristorante in questa fascia, a differenza del LAZIO che presenta la percentuale pi&#249; alta.</br>
+						<span class="nb"> N.B. Per rendere visibili i dati su entrambi i grafici sono state adottate delle scale differenti. &#200; evidente quindi come neanche l&#180;1% dei ristoranti per ogni regione ospitino pessimi ristoranti.</span>
+						</p>
+					</div>
+					<div class="sezione sez1">
+						<img class="artwork wow fadeInUpBig" src="img/ciliegie.png">
+					</div>
+					<div id="contentQualita">
+						<div id="graficoQualitaMaggioreIT" class="col2 side qualitaPiu"></div>
+						<div id="graficoQualitaPeggioreIT" class="col2 side qualitaMeno"></div>
+					</div>
+				</div>
+				<div class="esterno">
+					<div class="sezione wow fadeInDownBig sez2">
+						<h2>PREZZO ALTO &#200; DAVVERO SINONIMO DI ALTA QUALIT&#192;?</h2>
+						<p>
+						A livello europeo invece abbiamo: <br/>
+						Rapporto qualit&#224;-prezzo ECCELLENTE: ben circa il 65% dei ristoranti della SERBIA si collocano in questa fascia, mentre lo stato con la minor percentuale di ristoranti aventi rapporto qualit&#224;-prezzo eccellente &#232; la Svezia, seguita dal Principato di Monaco che, come avevamo visto, risultava essere lo stato pi&#249; caro a livello della ristorazione.<br/>
+						Rapporto qualit&#224;-prezzo PESSIMO: ben 8 stati in Europa sono privi di ristoranti con un pessimo rapporto qualit&#224;-prezzo, il ch&#233; ci suggerisce come generalmente in Europa il prezzo del prodotto consumato &#232; proporzionale alla sua qualit&#224;. Lo stato con la maggior percentuale di locali collocabili in questa fascia &#232; invece l&#180;UCRAINA.<br/>
+						<span class="nb"> N.B. Per rendere visibili i dati su entrambi i grafici sono state adottate delle scale differenti. &#200; evidente quindi come neanche l&#180;1% dei ristoranti per ogni stato ospitino pessimi ristoranti.</span>
+						</p>
+					</div>
+					<div class="sezione sez1">
+						<img class="artwork wow fadeInUpBig" src="img/fragole.png">
+					</div>
+					<div id="contentQualita" class="owl-carousel1">
+						<div id="graficoQualitaMaggioreUE" class="col2 side qualitaPiu"></div>
+						<div id="graficoQualitaPeggioreUE" class="col2 side qualitaMeno"></div>
+					</div>
+				</div>
+			</article>
+		</section>
+		
+		<div class="parallax_separator lax-qual">
+			<h2 class="text">La migliore qualità!</h2>
+		</div>
+		
+		<section class="statistiche color1" id="migliori">
+			<div class="esterno">
+				<div class="sezione sez1">
+					<img class="artwork wow fadeInRight" src="img/spaghetti.png">
+				</div>
+				<div class="sezione wow fadeInLeft sez2">
+					<h2>QUALI SONO I 20 MIGLIORI RISTORANTI ITALIANI?</h2>
+					<p>
+					Basandosi sul punteggio e il numero di recensioni di TripAdvisor &#232; possibile realizzare una classifica dei migliori ristoranti. <br/>
+					Al primo posto FIRENZE con &#8220;All&#180;Antico Vinaio&#8221;, un&#180;economica osteria dove consumare prodotti tipici toscani in un clima familiare. Al secondo posto uno dei locali pi&#249; rinomati di NAPOLI, &#8220;L&#180;Antica Pizzeria da Michele&#8221;, presso il quale gustare una pizza in nome della tradizione meridionale. Chiude il podio MILANO con &#8220;Luini&#8221;, un locale street-food che porta al nord la tradizione dei panzerotti pugliesi.<br/>
+					Scorrendo la classifica prevale Roma, con 7 ristoranti nella top 20.
+					</p>
+				</div>
+			</div>
+			<div id="classifica">
+				<div id="podio">
+					<div id="gap2" class="gap col3"><p>2</p></div>
+					<div id="gap1" class="gap col3"><p>1</p></div>
+					<div id="gap3" class="gap col3"><p>3</p></div>
+				</div>
+			</div>
+			<div id="nomiPodio" class="">
+				<div id="gapName2" class="gapName col3"></div>
+				<div id="gapName1" class="gapName col3"></div>
+				<div id="gapName3" class="gapName col3"></div>
+			</div>
+			<div id="TheTooltip">
+				<div id="gapTooltip1" class="col3 gapTooltip vedi">
+					<div class="triangolo tr1"></div>
+				</div>
+				<div id="gapTooltip2" class="col3 gapTooltip vedi">
+					<div class="triangolo tr2"></div>
+				</div>
+				<div id="gapTooltip3" class="col3 gapTooltip vedi">
+					<div class="triangolo tr3"></div>
+				</div>
+			</div>
+			<div id="fuoriPodio">
+				<ul id="lista_fuoriPodio">
+				</ul>
+			</div>
+		</section>
+		<div class="parallax_separator lax-cat">
+			<h2 class="text">Le categorie!</h2>
+		</div>
+		<section class="statistiche color2" id="categorie">
+			<article class="owl-carousel">
+				<div class="esterno">
+					<div class="sezione wow fadeInLeft sez2">
+						<h2> QUALE CATEGORIA DI CIBO PREVALE IN ITALIA?</h2>
+						<p>All&#180;estero ci etichettano come &#8220;Pasta, Pizza e Mandolino&#8221; ma i dati parlano chiaro... l&#180;Italia &#232; molto di pi&#249;! <br/>
+						Prendendo in considerazione 6 CATEGORIE di cibo, diversi studi e i dati estratti da TripAdvisor dimostrano come i ristoranti di cucina VEGETARIANA siano i pi&#249; numerosi. Al secondo posto la pizza con l&#180;8,2% dei ristoranti in meno e a seguire il pesce. </br>
+						<a class="fonte" href="http://ilfattoalimentare.it/mangiare-sano-ricerca-nielsen.html">Studi dimostrano</a> come circa 2 italiani su 3 si preoccupino degli additivi contenuti nei cibi: cresce in Italia la ristorazione bio e il merito &#232; </br>dell&#180;incremento dei ristoranti vegetariani e vegani. Non a caso la diffusione dei Fast-Food non raggiunge neanche il 3% sul nostro territorio.</br>
+						Pensavate che il sushi stesse prendendo il sopravvento? Rallegratevi, la globalizzazione dovr&#224; attendere ancora un po&#180;. Infatti solo l&#180;1% dei ristoranti si dedica al cibo asiatico. </br>
+						</p>
+					</div>
+					<div class="sezione wow fadeInLeft sez1">
+							<img class="artwork wow fadeInRight" src="img/piattoSushi.png">
+					</div>
+					<div id="graficoCategorieIT"></div>
+				</div>
+				<div class="esterno">
+					<div class="sezione wow fadeInLeft sez2">
+						<h2> QUALE CATEGORIA DI CIBO PREVALE IN EUROPA?</h2>
+						<p>Come in Italia, anche in Europa prevale il cibo VEGETARIANO. Tuttavia l&#180;8% dei ristoranti in pi&#249; si dedica alla cucina di prodotti ittici, non a caso il settore della pesca europea &#232; il quarto al mondo per importanza. <br/>
+						Un incremento significativo si registra per i ristoranti di cucina orientale e i fast-food, che vanno a restringere il mercato della pizza e del gluten-free. Ad esempio in Francia si registra il maggior consumo pro capite di sushi in Europa. </br>
+						La classica pizza italiana &#232; comunque molto amata all&#180;estero e <a class="fonte" href="http://www.pizzeriaitaliana.it/it/chi-mangia-piu-pizza/">fonti attestano</a> come siano Germania, Francia e Spagna ad assorbire la percentuale maggiore del mercato.
+						</p>
+					</div>
+					<div class="sezione wow fadeInLeft sez1">
+							<img class="artwork wow fadeInRight" src="img/pollothai.png">
+					</div>
+					<div id="graficoCategorieUE"></div>
+				</div>
+			</article>
+		</section>
+		<section id="contentCard">
+			<h2 id="textCat">Scegli la categoria!</h2>
+				<div id="card1">
+					<div id="category">
+						<div id="button">
+							<article id="0" class="col3 contentCategory">
+									<div id="pesce" class="categoryBackground wow fadeInLeftBig">
+									</div>
+							</article>
+						
+							<article id="1" class="col3 contentCategory">
+									<div id="pizza" class="categoryBackground wow fadeInDownBig">
+									</div>
+							</article>
+						
+							<article id="2" class="col3 contentCategory">
+									<div id="fastfood" class="categoryBackground wow fadeInRightBig">
+									</div>
+							</article>
+						
+							<article id="3" class="col3 contentCategory">
+									<div id="vegetariano" class="categoryBackground wow fadeInLeftBig">
+									</div>
+							</article>
+						
+							<article id="4" class="col3 contentCategory">
+									<div id="glutine" class="categoryBackground wow fadeInUpBig">
+									</div>
+							</article>
+						
+							<article id="5" class="col3 contentCategory">
+									<div id="asiatico" class="categoryBackground wow fadeInRightBig">
+									</div>
+							</article>
+						</div>
+						
+						<div id="datiCat" class="nascosto">
+							<img id ="indietro" class="grafico" src="img/back.png" alt="tasto indietro">
+							<div id="datiGraf"></div>
+						</div>
+					</div>
+				</div>		
+		</section>
+		<footer>
+			<a href="ricerca.html">Fai la tua ricerca!</a>
+		</footer>
+		<script type="text/javascript" src="js/scroller.js"></script>	
+	</body>
+</html>

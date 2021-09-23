@@ -1,0 +1,96 @@
+/*
+INDEX:
+1- PREZZO
+2- QUALITA
+3- CATEGORIE
+*/
+
+
+/*-1 - import highchart.css*/
+
+@import 'https://code.highcharts.com/css/highcharts.css';
+tspan{
+  fill:#333!important;
+}
+td{
+  fill:#333!important;
+}
+.highcharts-background {
+  fill: transparent;
+}
+/*1-PREZZO*/
+/*legenda graficoPrezzo*/
+.graficoPrezzo .highcharts-color-2 {
+  fill: #b4b61f;
+  stroke: #b4b61f;
+}
+
+.graficoPrezzo .highcharts-color-1 {
+  fill: #fadd00;
+  stroke: #fadd00;
+}
+
+.graficoPrezzo .highcharts-color-0 {
+  fill: #e20c02;
+  stroke: #e20c02;
+}
+.graficoPrezzo g.highcharts-legend-item.highcharts-column-series.highcharts-color-0.highcharts-series-0:nth-child(1) .highcharts-point {
+    fill: #e20c02;
+}
+.graficoPrezzo g.highcharts-legend-item.highcharts-column-series.highcharts-color-1.highcharts-series-1:nth-child(2) .highcharts-point {
+    fill: #fadd00;
+}
+.graficoPrezzo g.highcharts-legend-item.highcharts-column-series.highcharts-color-2.highcharts-series-2:nth-child(3) .highcharts-point {
+    fill: #b4b61f;
+}
+/*2-QUALITA*/
+/*legenda graficoQualitàMigliore*/
+
+.qualitaPiu .highcharts-color-0 {
+  fill: #a10212;
+  stroke: #a10212;
+}
+.qualitaPiu g.highcharts-legend-item.highcharts-column-series.highcharts-color-0.highcharts-series-0:nth-child(1) .highcharts-point {
+    fill: #a10212;
+}
+.qualitaPiu td {
+    color: #333!important;
+}
+/*legenda graficoQualitàPeggiore*/
+
+.qualitaMeno .highcharts-color-0 {
+  fill: #fd6c78;
+  stroke: #fd6c78;
+}
+.qualitaMeno g.highcharts-legend-item.highcharts-column-series.highcharts-color-0.highcharts-series-0:nth-child(1) .highcharts-point {
+    fill: #fd6c78;
+}
+.qualitaMeno td {
+    color: #333!important;
+}
+
+/*3-CATEGORIE*/
+#datiGraf .highcharts-color-0{
+  fill: green;
+}
+#datiGraf .highcharts-color-1{
+  fill: #fff;
+  border: 1px solid #333;
+}
+#datiGraf .highcharts-color-2{
+  fill: red;
+}
+#datiGraf g.highcharts-legend-item.highcharts-column-series.highcharts-color-0.highcharts-series-0:nth-child(1) .highcharts-point {
+    fill: green;
+}
+#datiGraf g.highcharts-legend-item.highcharts-column-series.highcharts-color-1.highcharts-series-1:nth-child(2) .highcharts-point {
+    fill: #fff;
+}
+#datiGraf g.highcharts-legend-item.highcharts-column-series.highcharts-color-2.highcharts-series-2:nth-child(3) .highcharts-point {
+    fill: red;
+}
+#datiGraf td {
+    color: #333!important;
+}
+
+/*legenda graficoCategorie*/
